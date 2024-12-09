@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home étudiant</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .nav-buttons {
+            display: flex; /* Flexbox pour afficher les boutons côte à côte */
+            justify-content: center; /* Centrer les boutons horizontalement */
+            gap: 20px; /* Espace entre les boutons */
+            padding: 20px;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+            background: #007BFF;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            width: 200px; /* Largeur fixe pour les boutons */
+            text-align: center; /* Centrer le texte à l'intérieur du bouton */
+        }
+        .nav-buttons a:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+        }
+        .nav-buttons a:active {
+            transform: translateY(0);
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .nav-buttons {
+                flex-direction: column; /* Empiler les boutons verticalement sur les écrans plus petits */
+                gap: 10px; /* Réduire l'écart entre les boutons */
+            }
+        }
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-style: bold ;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bienvenue dans le système de gestion des étudiants</h2>
+        <div class="nav-buttons">
+            <a href="login.php">Connexion étudiant</a>
+            <a href="add_student.php">Ajouter un nouvel étudiant</a>
+            <a href="modules.php">Voir les spécialités et les modules</a>
+        </div>
+    </div>
+</body>
+</html>
